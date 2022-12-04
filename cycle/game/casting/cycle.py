@@ -64,7 +64,7 @@ class Cycle(Actor):
             position = Point(x - i * constants.CELL_SIZE, y)
             velocity = Point(1 * constants.CELL_SIZE, 0)
             text = "8" if i == 0 else "#"
-            color = self._cycle_color
+            color = constants.YELLOW if i == 0 else self._cycle_color
             
             segment = Actor()
             segment.set_position(position)
